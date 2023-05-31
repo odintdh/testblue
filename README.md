@@ -1,4 +1,4 @@
-# Starting point
+# testblue
 
 [![build-ublue](https://github.com/odintdh/testblue/actions/workflows/build.yml/badge.svg)](https://github.com/odintdh/testblue/actions/workflows/build.yml)
 
