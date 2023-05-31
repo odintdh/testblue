@@ -4,7 +4,7 @@
 name: testblue
 # The native container image to build on top of.
 # Warning: Non-uBlue images might not work properly, due to missing components.
-base-image: ghcr.io/ublue-os/bluefin
+base-image: ghcr.io/ublue-os/silverblue-main
 # What Fedora version to use. Use an explicit version or `latest`.
 # If you use `latest`, you will be automatically updated to the next major
 # Fedora version, assuming the image you're using as your base container
@@ -78,12 +78,12 @@ firstboot:
   # the "just setup-flatpaks" command from our "custom.just" template file.
   # This is just an example selection:
   flatpaks:
-    - com.github.mtkennerly.ludusavi
-    - org.yuzu_emu.yuzu
-    - org.duckstation.DuckStation
-    - net.pcsx2.PCSX2
-    - net.rpcs3.RPCS3
-    - com.valvesoftware.Steam
-    - com.heroicgameslauncher.hgl
-    - org.DolphinEmu.dolphin-emu
-    - org.libretro.RetroArch
+    - Ludusavi: com.github.mtkennerly.ludusavi
+    - Yuzu: org.yuzu_emu.yuzu
+    - DuckStation: org.duckstation.DuckStation
+    - PCSX2: net.pcsx2.PCSX2
+    - RPCS3: net.rpcs3.RPCS3
+    - Steam: com.valvesoftware.Steam
+    - Heroic: com.heroicgameslauncher.hgl
+    - Dolphin: org.DolphinEmu.dolphin-emu
+    - RetroArch: org.libretro.RetroArch
