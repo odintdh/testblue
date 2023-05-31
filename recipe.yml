@@ -4,7 +4,7 @@
 name: testblue
 # The native container image to build on top of.
 # Warning: Non-uBlue images might not work properly, due to missing components.
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/bluefin-dx:38
 # What Fedora version to use. Use an explicit version or `latest`.
 # If you use `latest`, you will be automatically updated to the next major
 # Fedora version, assuming the image you're using as your base container
@@ -58,6 +58,7 @@ rpm:
     # Add your own below:
     # Example:
     # - tilix
+    - calibre
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:
@@ -78,5 +79,12 @@ firstboot:
   # the "just setup-flatpaks" command from our "custom.just" template file.
   # This is just an example selection:
   flatpaks:
-    - io.github.celluloid_player.Celluloid
-    - org.kde.krita
+    - com.github.mtkennerly.ludusavi
+    - org.yuzu_emu.yuzu
+    - org.duckstation.DuckStation
+    - net.pcsx2.PCSX2
+    - net.rpcs3.RPCS3
+    - com.valvesoftware.Steam
+    - com.heroicgameslauncher.hgl
+    - org.DolphinEmu.dolphin-emu
+    - org.libretro.RetroArch
