@@ -33,5 +33,5 @@ install -o root -g root -m 0755 mc /usr/bin/mc
 sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /etc/systemd/user.conf
 sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /etc/systemd/system.conf
 #flatpak install flathub com.raggesilver.BlackBox
-systemctl unmask dconf-update.service
-systemctl enable dconf-update.service
+#systemctl unmask dconf-update.service
+#systemctl enable dconf-update.service
