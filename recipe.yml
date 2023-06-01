@@ -78,15 +78,14 @@ rpm:
     - azure-cli
     - mariadb
     - ansible
-    - qemu
-    - qemu-user-static 
-    - qemu-user-binfmt 
-    - virt-manager 
-    - libvirt 
-    - qemu 
-    - qemu-user-static 
-    - qemu-user-binfmt
-    - edk2-ovmf
+#    - qemu
+#    - qemu-user-static 
+#    - qemu-user-binfmt 
+#    - virt-manager 
+#    - libvirt 
+#    - qemu-user-static 
+#    - qemu-user-binfmt
+#    - edk2-ovmf
     - pycharm-community
     - pycharm-community-plugins
     - gnome-tweaks
