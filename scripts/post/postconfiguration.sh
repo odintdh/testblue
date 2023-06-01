@@ -7,8 +7,8 @@ set -oue pipefail
 
 # Your code goes here.
 cd /tmp/
-#echo 'Add azure-devops extension'
-#az extension add --name azure-devops
+echo 'Add azure-devops extension'
+az extension add --name azure-devops
 echo 'Add awscliv2'
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
@@ -29,7 +29,8 @@ install -o root -g root -m 0755 kubectl-argo-rollouts-linux-amd64 /usr/bin/kubec
 echo "Add mc client"
 curl -LO "https://dl.min.io/client/mc/release/linux-amd64/mc" -o "mc"
 install -o root -g root -m 0755 mc /usr/bin/mc
-gsettings set org.gnome.desktop.wm.preferences button-layout "close,minimize,maximize:"
+#gsettings set org.gnome.desktop.wm.preferences button-layout "close,minimize,maximize:"
 sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /etc/systemd/user.conf
 sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /etc/systemd/system.conf
-rm -rf /tmp/*
+flatpak install flathub com.raggesilver.BlackBox
+systemctl unmask dconf-update.service && systemctl enable dconf-update.service

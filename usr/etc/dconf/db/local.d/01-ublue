@@ -1,0 +1,21 @@
+[org/gnome/shell] 
+favorite-apps = ['org.mozilla.firefox.desktop', 'org.gnome.Nautilus.desktop','com.raggesilver.BlackBox.desktop','org.gnome.Software.desktop', 'org.gnome.Settings.desktop','yelp.desktop']
+enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com', 'dash-to-panel@jderose9.github.com','gsconnect@andyholmes.github.io']
+
+[org/gnome/desktop/background]
+picture-uri='file:///usr/share/backgrounds/STScl.jpg'
+picture-uri-dark='file:///usr/share/backgrounds/STScl.jpg'
+picture-options='stretched'
+primary-color='000000'
+secondary-color='FFFFFF'
+
+
+[org/gnome/desktop/wm/preferences]
+button-layout=":minimize,maximize,close"
+num-workspaces='4'
+
+
+[com/raggesilver/BlackBox]
+command-as-login-shell=true
+use-custom-command=true
+custom-shell-command='distrobox enter ubuntu'
