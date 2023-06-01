@@ -7,8 +7,8 @@ set -oue pipefail
 
 # Your code goes here.
 cd /tmp/
-echo 'Add azure-devops extension'
-az extension add --name azure-devops
+#echo 'Add azure-devops extension'
+#az extension add --name azure-devops
 echo 'Add awscliv2'
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
