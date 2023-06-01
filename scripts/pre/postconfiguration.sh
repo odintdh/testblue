@@ -22,7 +22,7 @@ unzip kubelogin-linux-amd64.zip
 install -o root -g root -m 0755 bin/linux_amd64/kubelogin /usr/bin/kubelogin
 echo "Add argocd-cli"
 curl -LO "https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64" -o "argocd"
-install -o root -g root -m 0755 argocd /usr/bin/argocd
+install -o root -g root -m 0755 argocd-linux-amd64 /usr/bin/argocd
 echo "Add argocd rollouts"
 curl -LO "https://github.com/argoproj/argo-rollouts/releases/latest/download/kubectl-argo-rollouts-linux-amd64" -o "kubectl-argo-rollouts"
 install -o root -g root -m 0755 kubectl-argo-rollouts /usr/bin/kubectl-argo-rollouts
