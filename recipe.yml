@@ -42,6 +42,7 @@ rpm:
   repos:
   # Example (which also demonstrates version number expansion):
   # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
+    - https://copr.fedorainfracloud.org/coprs/phracek/PyCharm/repo/fedora-%FEDORA_VERSION%/phracek-PyCharm-fedora-%FEDORA_VERSION%.repo
     - https://rpm.releases.hashicorp.com/fedora/hashicorp.repo
     - https://packages.microsoft.com/config/rhel/9.0/prod.repo
     - https://repo.fortinet.com/repo/7.0/centos/8/os/x86_64/fortinet.repo
