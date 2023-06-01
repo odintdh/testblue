@@ -19,7 +19,7 @@ install -o root -g root -m 0755 kubectl /usr/bin/kubectl
 echo "Add kubelogin"
 curl -LO "https://github.com/Azure/kubelogin/releases/download/v0.0.29/kubelogin-linux-amd64.zip" -o "kubelogin-linux-amd64.zip"
 unzip kubelogin-linux-amd64.zip
-install -o root -g root -m 0755 kubelogin-linux-amd64/bin/linux_amd64/kubelogin /usr/bin/kubelogin
+install -o root -g root -m 0755 bin/linux_amd64/kubelogin /usr/bin/kubelogin
 echo "Add argocd-cli"
 curl -LO "https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64" -o "argocd"
 install -o root -g root -m 0755 argocd /usr/bin/argocd
