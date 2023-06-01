@@ -43,7 +43,6 @@ rpm:
   # Example (which also demonstrates version number expansion):
   # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
     - https://rpm.releases.hashicorp.com/fedora/hashicorp.repo
-    - https://packages.microsoft.com/yumrepos/vscode/config.repo
     - https://packages.microsoft.com/config/rhel/9.0/prod.repo
   # These RPMs will be installed from your enabled repositories (Fedora's own
   # repos, extra "repos" you've added, etc). The installation is automatically
@@ -88,6 +87,7 @@ rpm:
     - dk2-ovmf
     - pycharm-community
     - pycharm-community-plugins
+    - gnome-tweaks
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:

@@ -32,4 +32,7 @@ install -o root -g root -m 0755 mc /usr/bin/mc
 echo "Install gnome-extensions-cli"
 pip3 install --upgrade gnome-extensions-cli
 gext enable dash-to-panel@jderose9.github.com
+gsettings set org.gnome.desktop.wm.preferences button-layout "close,minimize,maximize:"
+sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /etc/systemd/user.conf
+sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /etc/systemd/system.conf
 rm -rf /tmp/*
