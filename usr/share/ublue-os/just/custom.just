@@ -34,3 +34,8 @@ nix-me-up:
 distrobox-bluefin:
   echo 'Creating Blufin Ubuntu distrobox ...'
   distrobox create --image ghcr.io/ublue-os/ubuntu-toolbox:latest -n bluefin -Y
+
+setup-gnome:
+  echo "Install gnome-extensions-cli"
+  pip3 install --upgrade gnome-extensions-cli
+  gext enable dash-to-panel@jderose9.github.com
