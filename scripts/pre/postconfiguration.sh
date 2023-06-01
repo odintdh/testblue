@@ -25,7 +25,7 @@ curl -LO "https://github.com/argoproj/argo-cd/releases/latest/download/argocd-li
 install -o root -g root -m 0755 argocd-linux-amd64 /usr/bin/argocd
 echo "Add argocd rollouts"
 curl -LO "https://github.com/argoproj/argo-rollouts/releases/latest/download/kubectl-argo-rollouts-linux-amd64" -o "kubectl-argo-rollouts"
-install -o root -g root -m 0755 kubectl-argo-rollouts /usr/bin/kubectl-argo-rollouts
+install -o root -g root -m 0755 kubectl-argo-rollouts-linux-amd64 /usr/bin/kubectl-argo-rollouts
 echo "Add mc client"
 curl -LO "https://dl.min.io/client/mc/release/linux-amd64/mc" -o "mc"
 install -o root -g root -m 0755 mc /usr/bin/mc
