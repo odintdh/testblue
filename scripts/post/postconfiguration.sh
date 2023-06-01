@@ -30,7 +30,8 @@ echo "Add mc client"
 curl -LO "https://dl.min.io/client/mc/release/linux-amd64/mc" -o "mc"
 install -o root -g root -m 0755 mc /usr/bin/mc
 #gsettings set org.gnome.desktop.wm.preferences button-layout "close,minimize,maximize:"
-#sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /etc/systemd/user.conf
-#sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /etc/systemd/system.conf
+sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /etc/systemd/user.conf
+sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /etc/systemd/system.conf
 #flatpak install flathub com.raggesilver.BlackBox
-#systemctl unmask dconf-update.service && systemctl enable dconf-update.service
+systemctl unmask dconf-update.service
+systemctl enable dconf-update.service

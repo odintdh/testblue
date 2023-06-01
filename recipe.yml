@@ -68,7 +68,7 @@ rpm:
     - wireguard-tools
     - tmux
     - terraform
-#    - code
+    - code
     - podman-compose 
     - podman-docker 
     - podman-plugins 
