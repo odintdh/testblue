@@ -86,7 +86,7 @@ rpm:
     - qemu 
     - qemu-user-static 
     - qemu-user-binfmt
-    - dk2-ovmf
+    - edk2-ovmf
     - pycharm-community
     - pycharm-community-plugins
     - gnome-tweaks
