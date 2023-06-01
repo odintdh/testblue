@@ -58,6 +58,7 @@ rpm:
     # Add your own below:
     # Example:
     # - tilix
+    - gnome-shell-extension-dash-to-panel
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:
@@ -78,12 +79,4 @@ firstboot:
   # the "just setup-flatpaks" command from our "custom.just" template file.
   # This is just an example selection:
   flatpaks:
-    - Ludusavi: com.github.mtkennerly.ludusavi
-    - Yuzu: org.yuzu_emu.yuzu
-    - DuckStation: org.duckstation.DuckStation
-    - PCSX2: net.pcsx2.PCSX2
-    - RPCS3: net.rpcs3.RPCS3
-    - Steam: com.valvesoftware.Steam
-    - Heroic: com.heroicgameslauncher.hgl
-    - Dolphin: org.DolphinEmu.dolphin-emu
-    - RetroArch: org.libretro.RetroArch
+    - dev.k8slens.OpenLens
