@@ -1,5 +1,5 @@
 [org/gnome/shell] 
-favorite-apps = ['org.mozilla.firefox.desktop','com.raggesilver.BlackBox.desktop','org.gnome.Nautilus.desktop','org.gnome.Settings.desktop','yelp.desktop']
+favorite-apps = ['org.mozilla.firefox.desktop','org.gnome.Nautilus.desktop','org.gnome.Settings.desktop','yelp.desktop']
 enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com', 'dash-to-panel@jderose9.github.com','gsconnect@andyholmes.github.io']
 
 [org/gnome/desktop/background]
@@ -27,3 +27,13 @@ use-custom-command=true
 custom-shell-command='distrobox enter ubuntu'
 window-width=975
 window-height=650
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Control><Alt>t'
+command='gnome-terminal'
+name='gnome-terminal'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Control><Alt>u'
+command='flatpak run com.raggesilver.BlackBox'
+name='blackbox'

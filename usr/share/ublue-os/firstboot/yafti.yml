@@ -58,6 +58,7 @@ screens:
           default: true
           packages:
             - Calculator: org.gnome.Calculator
+            - Blackbox Terminal: com.raggesilver.BlackBox
             - Calendar: org.gnome.Calendar
             - Characters: org.gnome.Characters
             - Cheese: org.gnome.Cheese
