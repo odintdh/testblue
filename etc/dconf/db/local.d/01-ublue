@@ -13,13 +13,18 @@ secondary-color='FFFFFF'
 group-apps=false
 group-apps-label-max-width=40
 group-apps-use-launchers=true
-dot-color-dominant=true
+dot-color-override=true
+appicon-margin=4
 
 
 [org/gnome/desktop/wm/preferences]
 button-layout=":minimize,maximize,close"
 num-workspaces='4'
 
+[org/gnome/desktop/interface]
+enable-hot-corners=false
+show-battery-percentage=true
+color-scheme='prefer-dark'
 
 [com/raggesilver/BlackBox]
 command-as-login-shell=true
