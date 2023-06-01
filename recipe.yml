@@ -85,7 +85,7 @@ rpm:
     - libvirt 
     - qemu 
     - qemu-user-static 
-    - qemu-user-binfmt e
+    - qemu-user-binfmt
     - dk2-ovmf
     - pycharm-community
     - pycharm-community-plugins
