@@ -39,6 +39,10 @@ distrobox-fedorabox:
   echo 'Creating Fedora distrobox'
   distrobox create --image quay.io/fedora/fedora:latest  -n fedorabox -Y
 
+distrobox-devopsbox:
+  echo 'Creating Fedora devops'
+  distrobox create --image ghcr.io/odintdh/boxkit:latest -n devops -Y
+
 setup-gnome:
   echo "Install gnome-extensions-cli"
   pip3 install --upgrade gnome-extensions-cli
