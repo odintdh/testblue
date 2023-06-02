@@ -35,9 +35,9 @@ distrobox-bluefin:
   echo 'Creating Blufin Ubuntu distrobox ...'
   distrobox create --image ghcr.io/ublue-os/ubuntu-toolbox:latest -n bluefin -Y
  
-distrobox-fedora:
+distrobox-fedorabox:
   echo 'Creating Fedora distrobox'
-  distrobox create --image quay.io/fedora/fedora:latest  -n fedora -Y
+  distrobox create --image quay.io/fedora/fedora:latest  -n fedorabox -Y
 
 setup-gnome:
   echo "Install gnome-extensions-cli"

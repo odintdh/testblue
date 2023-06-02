@@ -30,7 +30,7 @@ color-scheme='prefer-dark'
 [com/raggesilver/BlackBox]
 command-as-login-shell=true
 use-custom-command=true
-custom-shell-command='distrobox enter fedora'
+custom-shell-command='distrobox enter fedorabox'
 window-width=975
 window-height=650
 

@@ -112,3 +112,4 @@ firstboot:
   flatpaks:
     - com.raggesilver.BlackBox
     - dev.k8slens.OpenLens
+    - org.keepassxc.KeePassXC
