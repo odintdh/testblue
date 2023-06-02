@@ -12,7 +12,7 @@ az extension add --name azure-devops
 echo 'Add awscliv2'
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
-./aws/install --bin-dir /usr/bin --install-dir /usr/bin/aws/aws-cli --update
+./aws/install --bin-dir /usr/bin --install-dir /usr/bin/installationaws/aws-cli --update
 echo "Add kubectl"
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 install -o root -g root -m 0755 kubectl /usr/bin/kubectl
