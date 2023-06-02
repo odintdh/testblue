@@ -34,6 +34,10 @@ nix-me-up:
 distrobox-bluefin:
   echo 'Creating Blufin Ubuntu distrobox ...'
   distrobox create --image ghcr.io/ublue-os/ubuntu-toolbox:latest -n bluefin -Y
+ 
+distrobox-fedora:
+  echo 'Creating Fedora distrobox'
+  distrobox create --image quay.io/fedora/fedora:38  -n fedora38 -Y
 
 setup-gnome:
   echo "Install gnome-extensions-cli"
