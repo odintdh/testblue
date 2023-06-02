@@ -1,5 +1,5 @@
 [org/gnome/shell] 
-favorite-apps = ['org.mozilla.firefox.desktop','org.gnome.Terminal.desktop','org.gnome.Nautilus.desktop','com.raggesilver.BlackBox.desktop','org.gnome.Settings.desktop','yelp.desktop']
+favorite-apps = ['org.mozilla.firefox.desktop','org.gnome.Terminal.desktop','org.gnome.Nautilus.desktop','com.raggesilver.BlackBox.desktop','org.gnome.Settings.desktop','yelp.desktop', 'org.gnome.Software.desktop']
 enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com', 'dash-to-panel@jderose9.github.com','gsconnect@andyholmes.github.io']
 
 [org/gnome/desktop/background]
@@ -30,7 +30,7 @@ color-scheme='prefer-dark'
 [com/raggesilver/BlackBox]
 command-as-login-shell=true
 use-custom-command=true
-custom-shell-command='distrobox enter ubuntu'
+custom-shell-command='distrobox enter fedora38'
 window-width=975
 window-height=650
 
