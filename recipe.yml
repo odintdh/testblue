@@ -45,7 +45,7 @@ rpm:
     - https://copr.fedorainfracloud.org/coprs/phracek/PyCharm/repo/fedora-%FEDORA_VERSION%/phracek-PyCharm-fedora-%FEDORA_VERSION%.repo
     - https://rpm.releases.hashicorp.com/fedora/hashicorp.repo
     - https://packages.microsoft.com/config/rhel/9.0/prod.repo
-#    - https://repo.fortinet.com/repo/7.0/centos/8/os/x86_64/fortinet.repo
+    - https://repo.fortinet.com/repo/7.0/centos/8/os/x86_64/fortinet.repo
   # These RPMs will be installed from your enabled repositories (Fedora's own
   # repos, extra "repos" you've added, etc). The installation is automatically
   # performed via rpm-ostree during the image build, and will be pre-installed
@@ -67,17 +67,18 @@ rpm:
     - nautilus-gsconnect
     - wireguard-tools
     - tmux
-    - terraform
-    - code
+#    - terraform
+#    - code
     - podman-compose 
     - podman-docker 
     - podman-plugins 
     - podman-tui
+    - inxi
     - powertop
-    - helm
-    - azure-cli
-    - mariadb
-    - ansible
+#    - helm
+#    - azure-cli
+#    - mariadb
+#    - ansible
 #    - qemu
 #    - qemu-user-static 
 #    - qemu-user-binfmt 
