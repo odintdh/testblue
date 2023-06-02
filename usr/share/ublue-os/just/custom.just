@@ -37,7 +37,7 @@ distrobox-bluefin:
  
 distrobox-fedora:
   echo 'Creating Fedora distrobox'
-  distrobox create --image quay.io/fedora/fedora:38  -n fedora38 -Y
+  distrobox create --image quay.io/fedora/fedora:latest  -n fedora -Y
 
 setup-gnome:
   echo "Install gnome-extensions-cli"
