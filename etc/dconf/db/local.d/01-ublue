@@ -1,5 +1,5 @@
 [org/gnome/shell] 
-favorite-apps = ['org.mozilla.firefox.desktop','org.gnome.Nautilus.desktop','org.gnome.Settings.desktop','yelp.desktop']
+favorite-apps = ['org.mozilla.firefox.desktop','org.gnome.Terminal.desktop','org.gnome.Nautilus.desktop','com.raggesilver.BlackBox.desktop','org.gnome.Settings.desktop','yelp.desktop']
 enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com', 'dash-to-panel@jderose9.github.com','gsconnect@andyholmes.github.io']
 
 [org/gnome/desktop/background]
@@ -14,7 +14,8 @@ group-apps=false
 group-apps-label-max-width=40
 group-apps-use-launchers=true
 dot-color-override=true
-appicon-margin=4
+appicon-margin=1
+panel-position='TOP'
 
 
 [org/gnome/desktop/wm/preferences]
