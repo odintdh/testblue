@@ -31,9 +31,17 @@ nix-me-up:
   echo 'Setting phasers to kill. Installing nix.'
   /usr/bin/ublue-nix-install
 
+nix-devbox:
+  echo 'Installing devbox!'
+  curl -fsSL https://get.jetpack.io/devbox | bash
+
 distrobox-bluefin:
   echo 'Creating Blufin Ubuntu distrobox ...'
   distrobox create --image ghcr.io/ublue-os/ubuntu-toolbox:latest -n bluefin -Y
+
+distrobox-universal:
+  echo 'Creating Universal Development distrobox ...'
+  distrobox create --image mcr.microsoft.com/devcontainers/universal:latest -n universal -Y
  
 distrobox-fedorabox:
   echo 'Creating Fedora distrobox'
