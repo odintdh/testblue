@@ -55,3 +55,11 @@ setup-gnome:
   echo "Install gnome-extensions-cli"
   pip3 install --upgrade gnome-extensions-cli
   gext enable dash-to-panel@jderose9.github.com
+
+upgrade:
+  rpm-ostree upgrade
+  flatpak update -y
+  distrobox upgrade -a
+
+yafti:
+  yafti /usr/share/ublue-os/firstboot/yafti.yml
