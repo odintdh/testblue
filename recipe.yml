@@ -75,6 +75,7 @@ rpm:
     - podman-tui
     - inxi
     - powertop
+    - neofetch
     - helm
     - azure-cli
     - mariadb
