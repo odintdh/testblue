@@ -29,6 +29,9 @@ install -o root -g root -m 0755 kubectl-argo-rollouts-linux-amd64 /usr/bin/kubec
 echo "Add mc client"
 curl -LO "https://dl.min.io/client/mc/release/linux-amd64/mc" -o "mc"
 install -o root -g root -m 0755 mc /usr/bin/mc
+echo "Add kind"
+curl -Lo ./kind "https://kind.sigs.k8s.io/dl/v0.17.0/kind-$(uname)-amd64"
+install -o root -g root -m 0755 kind /usr/bin/kind
 sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /etc/systemd/user.conf
 sed -i 's/#DefaultTimeoutStopSec.*/DefaultTimeoutStopSec=15s/' /etc/systemd/system.conf
 # workaround to execute dconf-update
