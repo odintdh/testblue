@@ -60,7 +60,6 @@ rpm:
     - libadwaita
     # Add your own below:
     # Example:
-    # - tilix
     - gnome-shell-extension-appindicator
     - gnome-shell-extension-dash-to-panel
     - gnome-shell-extension-gsconnect
@@ -75,15 +74,13 @@ rpm:
     - podman-tui
     - inxi
     - powertop
-    - neofetch
     - helm
     - azure-cli
     - mariadb
     - mysql-workbench
     - postgresql
     - pgadmin4-desktop
-    - starship
-#    - ansible
+    - ansible
 #    - qemu
 #    - qemu-user-static 
 #    - qemu-user-binfmt 
@@ -92,8 +89,8 @@ rpm:
 #    - qemu-user-static 
 #    - qemu-user-binfmt
 #    - edk2-ovmf
-    - pycharm-community
-    - pycharm-community-plugins
+#    - pycharm-community
+#    - pycharm-community-plugins
     - gnome-tweaks
 #    - forticlient
   # These RPMs will be removed from the system image. This step happens during
