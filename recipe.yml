@@ -41,7 +41,7 @@ rpm:
   # which greatly simplifies future maintenance of your custom recipe.
   repos:
   # Example (which also demonstrates version number expansion):
-  # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
+    - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
     - https://copr.fedorainfracloud.org/coprs/phracek/PyCharm/repo/fedora-%FEDORA_VERSION%/phracek-PyCharm-fedora-%FEDORA_VERSION%.repo
     - https://rpm.releases.hashicorp.com/fedora/hashicorp.repo
     - https://packages.microsoft.com/config/rhel/9.0/prod.repo
@@ -68,7 +68,7 @@ rpm:
     - wireguard-tools
     - tmux
     - terraform
-#    - code
+    - code
     - podman-compose 
     - podman-docker 
     - podman-plugins 
@@ -80,6 +80,7 @@ rpm:
     - mariadb
     - postgresql
     - pgadmin4-desktop
+    - starship
 #    - ansible
 #    - qemu
 #    - qemu-user-static 
