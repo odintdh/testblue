@@ -67,7 +67,7 @@ rpm:
     - nautilus-gsconnect
     - wireguard-tools
     - tmux
-#    - terraform
+    - terraform
 #    - code
     - podman-compose 
     - podman-docker 
@@ -75,9 +75,10 @@ rpm:
     - podman-tui
     - inxi
     - powertop
-#    - helm
-#    - azure-cli
-#    - mariadb
+    - helm
+    - azure-cli
+    - mariadb
+    - postgresql 
 #    - ansible
 #    - qemu
 #    - qemu-user-static 
