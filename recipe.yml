@@ -79,6 +79,7 @@ rpm:
     - helm
     - azure-cli
     - mariadb
+    - mysql-workbench
     - postgresql
     - pgadmin4-desktop
     - starship
