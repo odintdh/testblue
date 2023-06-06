@@ -78,7 +78,8 @@ rpm:
     - helm
     - azure-cli
     - mariadb
-    - postgresql 
+    - postgresql
+    - pgadmin4-desktop
 #    - ansible
 #    - qemu
 #    - qemu-user-static 
