@@ -7,25 +7,6 @@ setup-flatpaks:
       flatpak install --user --noninteractive flathub $pkg; \
   done
 
-setup-gaming:
-  echo 'Setting up gaming experience ... lock and load.'
-  flatpak install -y --user \\
-  com.discordapp.Discord \\
-  com.feaneron.Boatswain \\
-  org.freedesktop.Platform.VulkanLayer.MangoHud//22.08 \\
-  org.freedesktop.Platform.VulkanLayer.OBSVkCapture//22.08 \\
-  org.freedesktop.Platform.VulkanLayer.vkBasalt//22.08 \\
-  com.heroicgameslauncher.hgl \\
-  com.obsproject.Studio \\
-  com.obsproject.Studio.Plugin.OBSVkCapture \\
-  com.obsproject.Studio.Plugin.Gstreamer \\
-  com.usebottles.bottles \\
-  com.valvesoftware.Steam \\
-  com.valvesoftware.Steam.Utility.gamescope \\
-  net.davidotek.pupgui2
-  flatpak override com.usebottles.bottles --user --filesystem=xdg-data/applications 
-  flatpak override --user --env=MANGOHUD=1 com.valvesoftware.Steam 
-  flatpak override --user --env=MANGOHUD=1 com.heroicgameslauncher.hgl 
 
 nix-me-up:
   echo 'Setting phasers to kill. Installing nix.'
@@ -43,18 +24,15 @@ distrobox-universal:
   echo 'Creating Universal Development distrobox ...'
   distrobox create --image mcr.microsoft.com/devcontainers/universal:latest -n universal -Y
  
-distrobox-fedorabox:
+  
+distrobox-fedoraboxkit:
   echo 'Creating Fedora distrobox'
-  distrobox create --image quay.io/fedora/fedora:latest  -n fedorabox -Y
+  distrobox create --image ghcr.io/odintdh/fedoraboxkit:latest  -n fedoraboxkit -Y
 
 distrobox-devopsbox:
   echo 'Creating Fedora devops'
   distrobox create --image ghcr.io/odintdh/boxkit:latest -n devops -Y
 
-setup-gnome:
-  echo "Install gnome-extensions-cli"
-  pip3 install --upgrade gnome-extensions-cli
-  gext enable dash-to-panel@jderose9.github.com
 
 upgrade:
   rpm-ostree upgrade
